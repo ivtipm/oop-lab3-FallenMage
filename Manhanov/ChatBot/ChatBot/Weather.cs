@@ -15,7 +15,7 @@ namespace ChatBot
 
         public string Name { get; set; }
 
-        public Wind Wind { get; set; }
+        public Windinfo Wind { get; set; }
         public static String[] FindOutWeather()
         {
             string url = "http://api.openweathermap.org/data/2.5/weather?q=Chita&units=metric&appid=2856fc0f74411cd143093c7ac9b9a7a0";
@@ -42,7 +42,7 @@ namespace ChatBot
     {
         public float Temp { get; set; }
     }
-    class Wind
+    class Windinfo
     {
         public double Speed { get; set; }
     }
